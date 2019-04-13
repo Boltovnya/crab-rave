@@ -21,5 +21,12 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "popmotion": "^8.6.8",
+    "react-pose": "^4.0.8",
+    "react-pose-text": "^3.1.0",
+    "styled-components": "^4.2.0"
+  }
 }

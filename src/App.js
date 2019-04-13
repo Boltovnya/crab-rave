@@ -1,28 +1,46 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-class App extends Component {
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: "vOv",
+      color: { color: "#FF000" },
+      colorNow: "#FF0000",
+      colorPrev: "FF0000"
+    };
+  }
+
+  randomHex() {
+    return Math.floor(Math.random() * Math.floor(255)).toString(16);
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      if (this.state.text === "vOv") {
+        this.setState({ text: "VoV" });
+      } else {
+        this.setState({ text: "vOv" });
+      }
+    }, 150);
+    setInterval(() => {
+      this.setState({
+        colorPrev: this.state.color,
+        color: { color: `#${this.randomHex()}0000` },
+        colorNow: this.state.color
+      });
+    }, 100);
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <a className="info" href="https://github.com/boltovnya/crab-rave">
+          Project hosted on Github
+        </a>
+        <p className="crab">{this.state.text}</p>
       </div>
     );
   }
 }
-
-export default App;

@@ -1,33 +1,107 @@
+@font-face {
+  font-family: "Monoid";
+  src: url("/public/fonts/Monoid-Regular.ttf") format("truetype");
+}
+
+@keyframes color-text-change {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    color: #540000;
+  }
+  20% {
+    transform: translateX(-10px) rotate(-2deg);
+    color: #9d0000;
+  }
+  40% {
+    transform: translateX(10px) rotate(-5deg);
+    color: #b40000;
+  }
+  50% {
+    transofmr: translateX(0) rotate(0deg);
+    color: #c70000;
+  }
+  60% {
+    transform: translateX(-10px) rotate(2deg);
+    color: #b40000;
+  }
+  80% {
+    transform: translateX(10px) rotate(5deg);
+    color: #9d0000;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    color: #540000;
+  }
+}
+
+@keyframes color-bg-change {
+  0% {
+    background-color: #0a3f5b;
+  }
+  10% {
+    background-color: #116b9b;
+  }
+  20% {
+    background-color: #1481ba;
+  }
+  30% {
+    background-color: #1793d6;
+  }
+  40% {
+    background-color: #1aa6f2;
+  }
+  50% {
+    background-color: #ffffff;
+  }
+  60% {
+    background-color: #1aa6f2;
+  }
+  70% {
+    background-color: #1793d6;
+  }
+  80% {
+    background-color: #1481ba;
+  }
+  90% {
+    background-color: #116b9b;
+  }
+  100% {
+    background-color: #0a3f5b;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Monoid";
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+  display: grid;
+  place-items: center;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #1481ba;
+  padding: 0 10px;
+  font-size: 10em;
+  animation: color-bg-change 0.5s ease-in-out infinite;
 }
 
-.App-link {
-  color: #61dafb;
+.crab {
+  animation: color-text-change 1.8s ease-in-out infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.youtube {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.info {
+  position: absolute;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
 }
