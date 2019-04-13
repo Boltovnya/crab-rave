@@ -39,7 +39,7 @@ export default class App extends Component {
         <a className="info" href="https://github.com/boltovnya/crab-rave">
           Project hosted on Github
         </a>
-        <audio src={process.env.PUBLIC_URL + "/crab-rave.ogg"} autoplay loop />
+        <audio src={process.env.PUBLIC_URL + "/crabrave.mp3"} autoplay loop />
         <p className="crab">{this.state.text}</p>
       </div>
     );
