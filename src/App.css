@@ -91,11 +91,10 @@ body {
   animation: color-text-change 1.8s ease-in-out infinite;
 }
 
-.youtube {
-  position: relative;
-  width: 0px;
-  height: 0px;
-  overflow: hidden;
+.music {
+  position: absolute;
+  max-height: 0;
+  max-width: 0;
 }
 
 .info {
