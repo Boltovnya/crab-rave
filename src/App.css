@@ -89,6 +89,7 @@ body {
 
 .crab {
   animation: color-text-change 1.8s ease-in-out infinite;
+  text-decoration: none;
 }
 
 /* .music {
