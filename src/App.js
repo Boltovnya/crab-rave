@@ -24,13 +24,6 @@ export default class App extends Component {
         this.setState({ text: "vOv" });
       }
     }, 150);
-    setInterval(() => {
-      this.setState({
-        colorPrev: this.state.color,
-        color: { color: `#${this.randomHex()}0000` },
-        colorNow: this.state.color
-      });
-    }, 100);
   }
 
   render() {
