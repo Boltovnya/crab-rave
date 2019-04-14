@@ -91,11 +91,11 @@ body {
   animation: color-text-change 1.8s ease-in-out infinite;
 }
 
-.music {
+/* .music {
   position: absolute;
   max-height: 0;
   max-width: 0;
-}
+} */
 
 .info {
   position: absolute;
@@ -103,4 +103,9 @@ body {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
+}
+
+.click {
+  font-size: 30px;
+  color: #540000;
 }

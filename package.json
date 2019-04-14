@@ -30,6 +30,7 @@
     "popmotion": "^8.6.8",
     "react-pose": "^4.0.8",
     "react-pose-text": "^3.1.0",
+    "react-sound": "^1.2.0",
     "styled-components": "^4.2.0"
   }
 }
